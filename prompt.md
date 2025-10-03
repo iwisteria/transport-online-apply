@@ -1,0 +1,520 @@
+以下のhtmlコードの内容と同等の内容のWebページを作ってください。
+
+デザインはシンプルなホワイトベースでお願いします
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自動車運送事業手続きのオンライン申請が始まります</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: "Yu Gothic", "Meiryo", sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        
+        header {
+            background: linear-gradient(135deg, #2c3e92 0%, #4a5fb8 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        
+        .logo {
+            text-align: right;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            border-bottom: 3px solid white;
+            padding-bottom: 15px;
+        }
+        
+        .subtitle {
+            background-color: rgba(255,255,255,0.2);
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+        
+        .highlight {
+            background-color: #fff3cd;
+            padding: 20px 30px;
+            margin: 30px;
+            border-left: 5px solid #ff6b00;
+            font-size: 16px;
+        }
+        
+        .highlight strong {
+            color: #d32f2f;
+        }
+        
+        section {
+            padding: 40px 30px;
+        }
+        
+        h2 {
+            background: linear-gradient(to right, #e3f2fd 0%, transparent 100%);
+            color: #1976d2;
+            padding: 15px 20px;
+            margin-bottom: 30px;
+            border-left: 5px solid #1976d2;
+            font-size: 24px;
+        }
+        
+        .benefits {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .benefit-item {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border: 2px solid #e0e0e0;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .benefit-icon {
+            font-size: 36px;
+            color: #1976d2;
+        }
+        
+        .benefit-text {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        
+        .comparison {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin: 30px 0;
+        }
+        
+        .comparison-box {
+            border: 3px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 25px;
+            background-color: #fafafa;
+        }
+        
+        .comparison-box h3 {
+            background-color: #424242;
+            color: white;
+            padding: 12px;
+            margin: -25px -25px 20px -25px;
+            border-radius: 7px 7px 0 0;
+            font-size: 18px;
+            text-align: center;
+        }
+        
+        .comparison-box.online h3 {
+            background-color: #1976d2;
+        }
+        
+        .comparison-box ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .comparison-box li {
+            padding: 10px 0 10px 30px;
+            position: relative;
+            font-size: 15px;
+        }
+        
+        .comparison-box li:before {
+            content: "✓";
+            position: absolute;
+            left: 5px;
+            color: #4caf50;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        
+        .procedure-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin: 30px 0;
+        }
+        
+        .procedure-item {
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: bold;
+            border: 2px solid #90caf9;
+        }
+        
+        .notice {
+            background-color: #fff3e0;
+            border: 2px solid #ff9800;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 30px 0;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        .flow-section {
+            background-color: #f1f8f4;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+        
+        .flow-steps {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .flow-step {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 5px solid #4caf50;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .flow-step h4 {
+            color: #2e7d32;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        
+        .links-section {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .link-box {
+            background: linear-gradient(135deg, #3949ab 0%, #5c6bc0 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            display: block;
+            transition: transform 0.3s;
+        }
+        
+        .link-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        
+        .link-box h4 {
+            font-size: 16px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid rgba(255,255,255,0.3);
+            padding-bottom: 10px;
+        }
+        
+        .link-box p {
+            font-size: 13px;
+            line-height: 1.6;
+        }
+        
+        .contact-section {
+            background-color: #f5f5f5;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .contact-box {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            border-top: 4px solid #ff5722;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .contact-box h4 {
+            background-color: #424242;
+            color: white;
+            padding: 10px;
+            margin: -20px -20px 15px -20px;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        
+        .contact-box .org-name {
+            font-weight: bold;
+            color: #1976d2;
+            margin-bottom: 5px;
+        }
+        
+        .contact-box .phone {
+            font-size: 20px;
+            color: #d32f2f;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        
+        .contact-box .hours {
+            font-size: 13px;
+            color: #666;
+        }
+        
+        footer {
+            background-color: #263238;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+        
+        .url-link {
+            color: #64b5f6;
+            word-break: break-all;
+            font-size: 14px;
+            display: inline-block;
+            margin-top: 5px;
+        }
+        
+        @media (max-width: 768px) {
+            .benefits, .comparison, .procedure-grid, .links-section, .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 22px;
+            }
+            
+            .subtitle {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo"></div>
+            <h1>自動車運送事業手続きのオンライン申請が始まります</h1>
+            <div class="subtitle">
+                バス・トラック・タクシー等事業者の皆様は、<br>
+                オフィスや自宅のパソコンからe-Govで、各種手続きの<br>
+                オンライン申請が行えるようになりました
+            </div>
+        </header>
+
+        <div class="highlight">
+            書面で提出していた<strong>自動車運送事業関連手続き</strong>の「申請書」や「届出書」が<br>
+            <strong>自社のパソコンからインターネットを通じて提出する</strong>ことができます。
+        </div>
+
+        <section>
+            <h2>オンライン申請（e-Gov）利用のメリット</h2>
+            
+            <div class="benefits">
+                <div class="benefit-item">
+                    <div class="benefit-icon">🖥️</div>
+                    <div class="benefit-text">いつでも、どこでも申請可能</div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">🚗</div>
+                    <div class="benefit-text">行政機関までの移動が不要</div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">📊</div>
+                    <div class="benefit-text">パソコンで申請後の状況を確認</div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">📄</div>
+                    <div class="benefit-text">パソコンで公文書取得が可能</div>
+                </div>
+            </div>
+
+            <div class="comparison">
+                <div class="comparison-box">
+                    <h3>■ 紙申請の場合</h3>
+                    <p style="text-align: center; margin: 20px 0;">
+                        申請者 → 申請書・届出書を印刷 → 運輸局・運輸支局へ移動 → 提出
+                    </p>
+                </div>
+                
+                <div class="comparison-box online">
+                    <h3>■ オンライン申請の場合</h3>
+                    <ul>
+                        <li>いつでも、どこからでも申請可能</li>
+                        <li>申請書の印刷・持ち出しが不要</li>
+                        <li>本省・地方運輸支局までの移動が不要</li>
+                        <li>申請後の処理状況の確認や公文書の取得がパソコンにて可能</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section style="background-color: #fafafa;">
+            <h2>オンライン申請の利用対象となる手続き（概要）</h2>
+            
+            <h3 style="color: #1976d2; margin-bottom: 20px; font-size: 20px;">
+                自動車運送事業のオンライン申請対象手続き（例）
+            </h3>
+            
+            <div class="procedure-grid">
+                <div class="procedure-item">貨物自動車運送事業の許可等</div>
+                <div class="procedure-item">整備管理者の選任届出等</div>
+                <div class="procedure-item">適正化事業実施機関の届出等</div>
+                <div class="procedure-item">旅客自動車運送事業の許可等</div>
+                <div class="procedure-item">運行管理者の選任届出等</div>
+                <div class="procedure-item">タクシー運転者登録実施機関の届出</div>
+                <div class="procedure-item">自家用有償旅客運送の登録等</div>
+                <div class="procedure-item">事故報告書の提出等</div>
+                <div class="procedure-item">適性診断実施機関の認定申請等</div>
+            </div>
+
+            <div class="notice">
+                🚚 令和7年9月より先行運用を経て、段階的な利用開始を予定 🚛
+            </div>
+
+            <p style="margin-top: 20px; font-size: 14px; color: #666;">
+                オンライン申請の対象手続きの詳細は、以下のサイトをご参照ください。<br>
+                <strong>■ 国土交通省HP 物流・自動車局サイト「オンライン申請対象手続き一覧」</strong><br>
+                <span class="url-link">URL: https://www.mlit.go.jp/jidosha/jidosha_tk3_000132.html</span>
+            </p>
+        </section>
+
+        <section>
+            <h2>オンライン申請利用の流れ（概要）</h2>
+            
+            <div class="flow-section">
+                <h3 style="color: #2e7d32; font-size: 20px; margin-bottom: 15px;">e-Gov電子申請サービス</h3>
+                
+                <div class="flow-steps">
+                    <div class="flow-step">
+                        <h4>1. パソコンの環境設定</h4>
+                        <p>e-Gov電子申請システムの利用には、Java実行環境(Java Runtime Environment)及びe-Gov電子申請プログラムのインストール作業が必要となります。インストール手順等についてはe-Govサイトをご参照ください。</p>
+                    </div>
+                    
+                    <div class="flow-step">
+                        <h4>2. 申請書/届出書、添付資料等の作成</h4>
+                        <p>ご利用のパソコンからe-Govの電子申請システムにログインの上、手続き検索機能を利用し、申請書/届出書の様式画面を表示し、画面に申請/届出内容の入力及び添付資料ファイルをアップロードします（申請様式と添付書類の作成）。なお、スマートフォンからは申請・届出はできませんので、ご留意ください。</p>
+                    </div>
+                    
+                    <div class="flow-step">
+                        <h4>3. 申請書/届出書添付資料等の提出</h4>
+                        <p>作成後、e-Govの電子申請システム上で、提出先等の設定を行った上で、申請書/届出書、添付資料の提出を行います。</p>
+                    </div>
+                </div>
+            </div>
+
+            <p style="margin-top: 20px; padding: 20px; background-color: #e8eaf6; border-radius: 8px; font-size: 14px;">
+                オンライン申請利用準備、操作方法の詳細につきましては、以下のHPサイト内<strong>「オンライン申請業務マニュアル」</strong>を作成・掲載していますので、そちらをご参照ください。<br>
+                <span class="url-link">URL: https://www.mlit.go.jp/jidosha/jidosha_tk3_000132.html</span>
+            </p>
+        </section>
+
+        <section style="background-color: #fafafa;">
+            <h2>関連リンク</h2>
+            
+            <div class="links-section">
+                <a href="http://www.e-gov.go.jp/" class="link-box">
+                    <h4>e-Gov電子申請サービスサイト</h4>
+                    <p>手続共通のオンライン申請利用準備、利用方法、よくある質問等を掲載する総合サイトです。</p>
+                </a>
+                
+                <a href="https://shinsei.e-gov.go.jp/contents/help/faq" class="link-box">
+                    <h4>e-Gov電子申請～FAQサイト</h4>
+                    <p>オンライン申請利用のご質問への回答を紹介するサイトです（上記総合サイト内に構成）。</p>
+                </a>
+                
+                <a href="https://www.mlit.go.jp/jidosha/jidosha_tk3_000132.html" class="link-box">
+                    <h4>国土交通省 物流・自動車局オンライン申請サイト</h4>
+                    <p>自動車運送事業関連手続に関するオンライン申請利用方法やツールを掲載するサイトです。</p>
+                </a>
+                
+                <a href="https://www.mlit.go.jp/jidosha/index.html" class="link-box">
+                    <h4>国土交通省 自動車運送事業情報サイト</h4>
+                    <p>自動車運送事業関連の関連法令・通達等を掲載しているサイトです。</p>
+                </a>
+                
+                <a href="https://www.mlit.go.jp/sogoseisaku/jouhouka/sosei_jouhouka_fr2_000002.html" class="link-box">
+                    <h4>国土交通省 e-Gov総合サイト</h4>
+                    <p>国土交通省のe-Gov電子申請サイトです。</p>
+                </a>
+            </div>
+        </section>
+
+        <section>
+            <h2>お問い合わせ先</h2>
+            
+            <div class="contact-section">
+                <div class="contact-grid">
+                    <div class="contact-box">
+                        <h4>パソコンの環境設定・電子申請システムの手順・不具合等に関する問い合わせ先</h4>
+                        <div class="org-name">e-Gov電子政府利用支援センター</div>
+                        <div class="phone">📞 050-3786-2225</div>
+                        <div class="hours">
+                            対応時間：<br>
+                            平日：9:00～19:00<br>
+                            土日祝日：9:00～17:00<br>
+                            （8月～3月の平日・土日祝日は、9:00～17:00）
+                        </div>
+                    </div>
+                    
+                    <div class="contact-box">
+                        <h4>各手続きの申請書/届出書、添付資料に関する問い合わせ先</h4>
+                        <p style="font-size: 14px; line-height: 1.7;">
+                            申請者様の所在する地域を管轄する運輸局、運輸支局等へご連絡ください。<br><br>
+                            問い合わせ先の詳細は、HPサイト内「業務面運輸支局問合窓口一覧表」をご確認ください。
+                        </p>
+                    </div>
+                    
+                    <div class="contact-box">
+                        <h4>本資料の内容に関する問い合わせ先</h4>
+                        <div class="org-name">国土交通省 物流・自動車局旅客課</div>
+                        <div class="phone">📞 03-5253-8111</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            国土交通省 物流・自動車局<br>
+            Ministry of Land, Infrastructure, Transport and Tourism
+        </footer>
+    </div>
+</body>
+</html>
